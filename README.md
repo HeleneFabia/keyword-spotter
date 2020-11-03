@@ -14,7 +14,7 @@ The goal of this challenge is to classify keywords in Luganda and English in aud
 
 [11-2020]
 
-- visualizing the audiofiles as spectrograms
+- visualizing the audio files as spectrograms
 - building a train and test dataset
 - building a baseline CNN model
 
