@@ -22,7 +22,7 @@ The goal of this challenge is to classify keywords in Luganda and English in aud
 
 #### The dataset
 
-The data consists of around 4000 audio files, each containing one of 193 spoken keywords in English or Luganda. What proposes a challenge here is that for some keywords there are only a handful of audio files in the training set.
+The data consists of around 4000 audio files, each containing one of 193 spoken keywords in English or Luganda. What poses a challenge here is that for some keywords there are only a handful of audio files in the training set.
 
 In order to gain a better grasp of the data, I visualized the audio files as spectrograms. Below, the spectrograms for three different audio files containing the keyword "banana" can be seen.
 
