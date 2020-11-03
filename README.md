@@ -29,7 +29,3 @@ In order to gain a better grasp of the data, I visualized the audio files as spe
 <p align="left">
   <img width="1000" height="320" src="https://github.com/HeleneFabia/keyword-spotter/blob/main/images/banana_ex.png">
 </p>
-
-***
-
-Please view [my notebook](...) for more details!
