@@ -27,5 +27,5 @@ The data consists of around 4000 audio files, each containing one of 193 spoken 
 In order to gain a better grasp of the data, I visualized the audio files as spectrograms. Below, the spectrograms for three different audio files containing the keyword "banana" can be seen.
 
 <p align="left">
-  <img width="1000" height="320" src="https://github.com/HeleneFabia/keyword-spotter/blob/main/images/banana_ex.png">
+  <img width="1000" height="300" src="https://github.com/HeleneFabia/keyword-spotter/blob/main/images/banana_ex.png">
 </p>
