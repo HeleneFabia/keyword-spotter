@@ -10,16 +10,6 @@ The goal of this challenge is to classify keywords in Luganda and English in aud
 
 ***
 
-#### Project updates
-
-[11-2020]
-
-- visualizing the audio files as spectrograms
-- building a train and test dataset
-- building a baseline CNN model
-
-***
-
 #### The dataset
 
 The data consists of around 4000 audio files, each containing one of 193 spoken keywords in English or Luganda. What poses a challenge here is that for some keywords there are only a handful of audio files in the training set.
