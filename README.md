@@ -27,22 +27,24 @@ To get a grasp of the data, below are the mel the spectrograms for all audio fil
 Since there are so few training examples, I decided to augment my data. As far as I understand it, you can augment audio data in two ways. Either you alter the audio itself (e.g. shift the pitch, stretch it, speed it up,...) or you augment the mel spectrograms. After some experiments, I settled for the second way using
 a method called SpecAugmet (https://arxiv.org/pdf/1904.08779.pdf) via the nlpaug library (https://nlpaug.readthedocs.io/en/latest/index.html). Below are three augmentations of the same mel spectrograms. The first image shows Frequency Masking, the second Time Masking, and the third one combines both Frequency and Time Masking.
 
-
+<p align="left">
+  <img width=720" height="240" src="https://github.com/HeleneFabia/keyword-spotter/blob/main/images/augm.png">
+</p>
 
 ***
 
 #### The model
 
+After looking into using CNNs for audio classification, I saw that using a transfer learning approach with CNNs pretrained on ImageNet works quite well for mel spectrograms (see, for example, https://medium.com/@krishna_84429/audio-classification-using-transfer-learning-approach-912e6f7397bb and https://arxiv.org/pdf/2007.11154.pdf).
 
-
-***
-
-#### Training and evaluation
+After some experiments involving multiple pretrained models in torchvision, using densenet161, resnet50, and  googlenet yielded the best validation performances: 0.84, 0.73., and 0.79, respectively. In order to perform transfer learning, I removed the last linear layer of all three models and replaced it with a new one which had an output dimension of 193 (i.e. the number of unique classes in this challenge).
 
 ***
 
 #### Submission
 
+I ensembled the three models mentioned above in order to improve the model's ability to generalize. This solution got me to the 36th place out of 198 participants in the challenge.
+
 ***
 
-For more details, please view my notebooks for[preprocessing](...), [training](...), and [submitting](...).
+For more details, please view my notebooks for[preprocessing](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_preprocessing.ipynb), [training](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_training.ipynb), and [submitting](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_submission.ipynb).
