@@ -25,7 +25,7 @@ To get a grasp of the data, below are the mel the spectrograms for all audio fil
 </p>
 
 Since there are so few training examples, I decided to augment my data. As far as I understand it, you can augment audio data in two ways. Either you alter the audio itself (e.g. shift the pitch, stretch it, speed it up,...) or you augment the mel spectrograms. After some experiments, I settled for the second way using
-a method called `SpecAugmet` (https://arxiv.org/pdf/1904.08779.pdf) via the `nlpaug` library (https://nlpaug.readthedocs.io/en/latest/index.html). Below are three augmentations of the same mel spectrograms. The first image shows Frequency Masking, the second Time Masking, and the third one combines both Frequency and Time Masking.
+a method called `SpecAugmet` (https://arxiv.org/pdf/1904.08779.pdf) via the `nlpaug` library (https://nlpaug.readthedocs.io/en/latest/index.html). Below are three augmentations of the first mel spectrograms from above. The first image shows Frequency Masking, the second Time Masking, and the third one combines both Frequency and Time Masking.
 
 <p align="left">
   <img width=720" height="240" src="https://github.com/HeleneFabia/keyword-spotter/blob/main/images/augm.png">
