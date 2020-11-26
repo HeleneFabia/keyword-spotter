@@ -25,7 +25,7 @@ To get a grasp of the data, below are the mel the spectrograms for all audio fil
 </p>
 
 Since there are so few training examples, I decided to augment my data. As far as I understand it, you can augment audio data in two ways. Either you alter the audio itself (e.g. shift the pitch, stretch it, speed it up,...) or you augment the mel spectrograms. After some experiments, I settled for the second way using
-a method called SpecAugmet (https://arxiv.org/pdf/1904.08779.pdf) via the nlpaug library (https://nlpaug.readthedocs.io/en/latest/index.html). Below are three augmentations of the same mel spectrograms. The first image shows Frequency Masking, the second Time Masking, and the third one combines both Frequency and Time Masking.
+a method called `SpecAugmet` (https://arxiv.org/pdf/1904.08779.pdf) via the `nlpaug` library (https://nlpaug.readthedocs.io/en/latest/index.html). Below are three augmentations of the same mel spectrograms. The first image shows Frequency Masking, the second Time Masking, and the third one combines both Frequency and Time Masking.
 
 <p align="left">
   <img width=720" height="240" src="https://github.com/HeleneFabia/keyword-spotter/blob/main/images/augm.png">
@@ -39,7 +39,7 @@ After looking into using CNNs for audio classification, I saw that using a trans
 - https://medium.com/@krishna_84429/audio-classification-using-transfer-learning-approach-912e6f7397bb 
 - https://arxiv.org/pdf/2007.11154.pdf).
 
-After some experiments involving multiple pretrained models in torchvision, using densenet161, resnet50, and  googlenet yielded the best validation performances: 0.84, 0.73., and 0.79, respectively. In order to perform transfer learning, I removed the last linear layer of all three models and replaced it with a new one which had an output dimension of 193 (i.e. the number of unique classes in this challenge).
+After some experiments involving multiple pretrained models in torchvision, using `densenet161`, `resnet50`, and  `googlenet` yielded the best validation performances: 0.8355, 0.7251, and 0.7898, respectively.
 
 ***
 
