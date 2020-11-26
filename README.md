@@ -35,7 +35,9 @@ a method called SpecAugmet (https://arxiv.org/pdf/1904.08779.pdf) via the nlpaug
 
 #### The model
 
-After looking into using CNNs for audio classification, I saw that using a transfer learning approach with CNNs pretrained on ImageNet works quite well for mel spectrograms (see, for example, https://medium.com/@krishna_84429/audio-classification-using-transfer-learning-approach-912e6f7397bb and https://arxiv.org/pdf/2007.11154.pdf).
+After looking into using CNNs for audio classification, I saw that using a transfer learning approach with CNNs pretrained on ImageNet works quite well for mel spectrograms:
+- https://medium.com/@krishna_84429/audio-classification-using-transfer-learning-approach-912e6f7397bb 
+- https://arxiv.org/pdf/2007.11154.pdf).
 
 After some experiments involving multiple pretrained models in torchvision, using densenet161, resnet50, and  googlenet yielded the best validation performances: 0.84, 0.73., and 0.79, respectively. In order to perform transfer learning, I removed the last linear layer of all three models and replaced it with a new one which had an output dimension of 193 (i.e. the number of unique classes in this challenge).
 
