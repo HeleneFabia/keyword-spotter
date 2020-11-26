@@ -49,4 +49,4 @@ I ensembled the three models mentioned above in order to improve the model's abi
 
 ***
 
-For more details, please view my notebooks for [preprocessing](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_preprocessing.ipynb), [training](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_training.ipynb), and [submitting](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_submission.ipynb).
+For more details, please view my notebooks about [preprocessing](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_preprocessing.ipynb), [training](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_training.ipynb), and [submitting](https://github.com/HeleneFabia/keyword-spotter/blob/main/keyword_spotter_submission.ipynb).
