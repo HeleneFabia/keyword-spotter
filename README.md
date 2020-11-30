@@ -45,7 +45,7 @@ After some experiments involving multiple pretrained models in torchvision, usin
 
 #### Submission
 
-I ensembled the three models mentioned above in order to improve the model's ability to generalize. This solution got me to the 36th place out of 198 participants in the challenge.
+I ensembled the three models mentioned above in order to improve the model's ability to generalize. This solution got me to the 43rd place out of 222 participants in the challenge.
 
 ***
 
