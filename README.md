@@ -39,7 +39,7 @@ After looking into using CNNs for audio classification, I saw that using a trans
 - https://medium.com/@krishna_84429/audio-classification-using-transfer-learning-approach-912e6f7397bb 
 - https://arxiv.org/pdf/2007.11154.pdf).
 
-After some experiments involving multiple pretrained models in torchvision, using `densenet161`, `resnet50`, and  `googlenet` yielded the best validation performances: 0.8355, 0.7251, and 0.7898, respectively.
+After some experiments involving multiple pretrained models in torchvision, using `densenet161`, `resnet50`, and  `googlenet` yielded the best validation accuracy: 0.8355, 0.7251, and 0.7898, respectively.
 
 ***
 
